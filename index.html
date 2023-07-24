@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Website Docs-Neil Coley Band </title>
+</head>
+<body>
+    <div class="container">
+    <aside> 
+        <nav>
+            
+                <a href="#intro">Intro</a>
+                <a href="#login">Login</a>
+                <a href="#add-media">Adding Media</a>
+                <a href="#content">Adding Content</a>
+                <label for="dropdown-open" class="dropdown-label"><span>Edit Content</span><span>+</span></label>               
+                <input type="checkbox" id="dropdown-open"> 
+                <div class="dropdown">
+                    <a href="#edit">Editing</a>
+                    <a href="#unpublish">Unpublishing</a>
+                    <a href="#delete">Deleting</a>
+                </div>
+        </nav>
+    </aside>
+    <main>
+        <header>
+            <h1>Neil Coley Band</h1>  
+            <h2>Content Management Guide</h2>
+        </header>
+        <span class="open-side">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle"><svg width="30" height="30">
+                <path class="menu-icon" d="M0,5 30,5" stroke="#B59C63" stroke-width="5"/>
+                <path class="menu-icon" d="M0,14 30,14" stroke="#B59C63" stroke-width="5"/>
+                <path class="menu-icon"d="M0,23 30,23" stroke="#B59C63" stroke-width="5"/>
+              </svg></label>  
+          </span>
+        <section id="intro">
+            <h2 class="section-title">Introduction</h2>
+            <p>Everything for the Neil Coley Band website is handled by a content-management system called Contentful. With Contentful, you can add, edit, publish, and delete your content with no coding required. In this guide we will walk you through how to use Contentful to easily and quickly keep your website up-to-date.</p>
+            <p>If you want to learn more about how to use Contentful, you can visit their <a href="https://www.contentful.com/guides/" target="_blank">Guides and Tutorials page</a></p>
+        </section>
+
+        <section id="login">
+            <h2 class="section-title">Login</h2>
+            <div class="login-wrapper">
+                <p class="login-text">1. To log in to your Contentful account, go to <a href="https://be.contentful.com/login" target="_blank">be.contentful.com/login</a>.</p>
+                <img src="./assets/rounded-pointer.svg" alt="line used as a pointer" class="pointer">
+
+                <p class="login-text">2. Enter your email and password, and then click "Log in" If the email you are using for Contentful is through gmail, you can use those credentials to access your account, as well.</p>
+                <img src="./assets/rounded-pointer.svg" alt="line used as a pointer" class="pointer">
+
+                <p class="login-text">3. If you forget your password, click "Reset Password" and you will asked to enter the email associated with the account. You will be sent a link to reset your password 
+                    </p>
+                    <img src="./assets/rounded-pointer.svg" alt="line used as a pointer" class="pointer"> 
+        
+                <div class="login-panel"><img src="./assets/login-contentful.webp" alt="screenshot of Contentful login panel">
+                    <p class="circle">1</p>
+                    <p class="circle">2</p>
+                    <p class="circle">3</p>
+                </div>
+            </div>
+                <h4><em>If you don't receive a passord reset email, or can't reset your password for any other reason, contact your administrator</em></h4>
+        </section>
+
+        <section id="add-media">
+            <h2 class="section-title">Adding Media</h2>
+                <h3>The Media section is where all of the images and other media files for your website are stored. You can add your files in this area, or you can add them as you are creating the new content that you will publish to your website (<a href="#content">Explained here</a>).</h3>
+
+                <div class="instruction-box-start">
+                    <p>To get started, click on the "Media" tab in the navigation menu.</p>
+                    <img src="./assets/media-screenshot1.webp" alt="screenshot of content page"> 
+                    <p>Then, when you're ready to add a new image, you'll click on the "Add asset" button in the right-hand corner.</p>
+                </div>
+
+                <div class="instruction-box instruction-style2">
+                    <img src="./assets/media-screenshot2.webp" alt="screenshot of closeup of add asset button">
+                    <span>
+                    <p>You have the option of adding a single asset or multiple assets.</p> <p>Choosing "Multiple assets" allows you to upload an entire folder of images, or add multiple images from different sources to upload in one batch.</p> <p> After your images have uploaded, you can then go back and edit them exactly as you would when adding single assets.</p>
+                    </span>
+                </div>
+
+                <div class="instruction-box instruction-style3">
+                    <img src="./assets/media-screenshot3.webp" alt="screenshot of the file upload panel">
+                    <span>
+                    <p>You can choose to add assets from not only your desktop, but also from multiple other sources.</p><p> When you <em>do</em> add assets from your desktop, you can either click "select files to upload" and search through your files, or just drag the images into the window.</p>
+                    </span>
+                    
+                </div>
+
+                <div class="instruction-box instruction-style1">
+                    <img src="./assets/media-screenshot5.webp" alt="screenshot of the image editor page">
+                    <p>When you add single assets, you will be able to add a title and description first. This information does not appear on the website and is not necessary: It is there only for your organizational purposes. If you choose not to create a name, Contentful will default to the file name. <em>Note: Creating clear and unique image names will make it much easier to find them when you need them.</p></em>
+                </div>
+
+                <div class="instruction-box instruction-style2">
+                    <img src="./assets/media-screenshot6.webp" alt="screenshot of closeup of image editing options">
+                    <span>
+                    <p>When you want to make changes to your image before you've uploaded it, you have several options:</p> <p>To make sure your images have have a consistent size or shape, the "Crop image" and "Resize image" features here make it very easy. To remove an image, you can just click "Delete file" and then add a new one.</p>
+                </span>
+                </div>
+
+                <div class="instruction-box instruction-style3">
+                    <img src="./assets/media-screenshot7.webp" alt="screenshot of closeup of publish button">
+                    <span>
+                    <p>When you're happy with your image, you will click "Publish".</p><p> Until you've published your assets, they will remain in "draft" status and will not be available to use on your website.</p><p> After you've published an image, the "Publish" button will read "Change status". At that point, you can unpublish the image or archive it.</p>
+                </span>
+                </div>
+        </section> 
+        
+        <section id="content">
+            <h2 class="section-title">Adding Content</h2>
+            <h3>The Content section is where each component that goes into your website is stored.</h3>
+            <div class="instruction-box-start">
+                <p>The "Content" tab is just to the left of the "Media" tab in the navigation bar"</p>
+                <img src="./assets/content-screenshot1.webp" alt="">
+                <p>When you first arrive at the Content page, you'll notice that all of the different types of content that go into your website are sorted only by date. They aren't very easy to sort through in this state, so you can filter them to find what you're looking for more easily.</p>
+            </div>
+            <div class="instruction-box instruction-style4">
+                <span class="content-left">
+                    <img src="./assets/content-screenshot4.webp" alt="">
+                    <p>The first filter is at the top of the page in the bar that says "Content Type" with a blue dropdown menu that says "any".  </p>
+                </span>
+                <span class="content-right">
+                    <img src="./assets/content-screenshot2.webp" alt="">
+                    <p>The second is towards the bottom left of the page. You'll see the same exact categories here as you did with the first filter button.</p>
+                </span>
+            </div>
+            <div class="instruction-box instruction-style2">
+                <span>
+                <p>
+                    When you're ready to enter some new content for your website, you'll go to the upper right-hand side of the page and click "Add entry". </p> <p> The dropdown will then show you the selection of different kinds of content you can enter. 
+                </p>
+            </span>
+                <img src="./assets/content-screenshot3.webp" alt="">
+            </div>
+            <div class="content-screen">
+                <img src="./assets/content-screenshot5webp.webp" alt="" class="image1">
+                <img src="./assets/multi-pointer.svg" alt="" class="multi-pointer">
+                <span>
+                    <p>Each type of content for your website has different elements that go into it. </p>
+                    <p>Some content requires just text, some requires text and images, etc. </p>
+                    <p>The "required" fields are labeled, and must have something enterend into them.</p>
+                    <p>The Content Model has already been set up so that all you have to do is fill in the required fields.</p>
+                </span>
+            
+            </div>
+            <div class="instruction-box">
+                <p>
+                If you are adding the type of content that requires an image,  you will have the option of either adding existing media, or uploading a new file. The process of uploading a new file here is exactly the same as it is when entering a new file in the <a href="#add-media">Media section</a>.
+                </p>
+                <img src="./assets/content-screenshot6.webp" alt="">
+                <p>When adding existing media, you'll see your images pop up and you can choose which one you want. <em>Again, clearly naming your media will make it easier to find.</em> </p>
+            </div>
+        </section>
+
+        <section id="edit">
+            <h2 class="section-title">Editing Your Content</h2>
+            <h3>You can edit your content and media before <em>or</em> after publishing it.</h3>
+            <div class="instruction-box instruction-style2">
+                <span>
+                <p>
+                    To edit your content after you have published it, click the Content tab at the top of the page.
+                </p>
+               
+                <p>
+                    You can filter your content to make it easier to find what you're looking for, just as did when you were <a href="#content">entering it for the first time</a>. 
+                </p>
+                <p>Make the changes as you see fit. <em>Remember that all "required" fields must have something in them</em>.
+                </p>
+                <p>Once you are happy with your edits, click the green Publish button on the right hand side.</p>
+            </span>
+            <img src="./assets/media-screenshot7.webp" alt="">
+
+            </div>
+        </section>
+        <section id="unpublish">
+            <h2 class="section-title">Unplublishing</h2>
+            
+            <h3>Unplublishing an item will remove it from your website, but will still be available for later use if needed.</h3>
+                <div class="instruction-box instruction-style1">
+                    <span>
+                        <img src="./assets/edit-screenshot6.webp" alt="">
+                        <p>
+                            You can upublish your content either by clicking the box next to a particular item and clicking "Unpublish" in the bar that appears above. 
+                        </p>
+                    </span>
+                    <span class="intruction-inner-wrapper">
+                        <img src="./assets/edit-screenshot2.webp" alt="">
+                        <span>
+                            <p>
+                                You can also unpublish your content from within its individual page. </p>
+                                <p>
+                                Open the item you want to unpublish by clicking on it, click the green "Change status" button, and choose "Unpublish" from there.
+                            </p>
+                        </span>
+                    </span>
+                </div>
+
+                <div class=" instruction-box instruction-style3">
+               
+                <img src="./assets/edit-screenshot3.webp" alt="">
+                <p>You'll then see a pop-up confirming that you want to unpublish your item</p>
+            </div>
+        </section>
+        <section id="delete">
+            <h2 class="section-title">Deleting</h2>
+            <h3 class="warning">Deleting content or media is irreversible. Use with caution.</h3>
+            <p>You can only delete and unpublished item. <a href="#unpublish">Refer to the previous section</a> to learn how to unpublish.</p>
+            <div class="instruction-box">
+                <img src="./assets/edit-sreenshot5.webp" alt="">
+                <p>To delete an item, click the "Delete button</p>
+                <img src="./assets/edit-screenshot4.webp" alt="">
+                <p>You'll then see a pop-up confirming that you want to delete your item</p>
+                <p>Click "Permanently delete" to finish or "Cancel" if you've changed your mind.</p>
+            </div>
+        </section>
+    </main>
+    <footer><p>H&B &copy<span id="year"></span></p></footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
